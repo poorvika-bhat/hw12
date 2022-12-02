@@ -15,7 +15,7 @@ _dbhostname = client.get_secret('HW12-DBHOSTNAME')
 _dbusername = client.get_secret('HW12-DBUSERNAME')
 _dbpassword = client.get_secret('HW12-DBPASSWORD')
 _dbname = client.get_secret('HW12-DBNAME')
-_secret = client.get_secret('HW12-SECRET-KEY')
+_secret = client.get_secret('HW12-SECRET-KEY') 
 
 conn = pymysql.connect(
         host = _dbhostname.value, 
