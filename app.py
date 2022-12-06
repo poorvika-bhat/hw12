@@ -22,7 +22,7 @@ conn = pymysql.connect(
         user = _dbusername.value, 
         password = _dbpassword.value, 
         db = _dbname.value, 
-        ssl={'ca': './BaltimoreCyberTrustRoot.crt.pem'},
+        ssl={'ca': './DigitalCertGlobalRootCA.crt.pem'},
         cursorclass = pymysql.cursors.DictCursor)  
 
 app = Flask(__name__)
